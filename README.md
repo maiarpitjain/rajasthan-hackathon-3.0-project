@@ -3,9 +3,9 @@ Report and check is a web portal for travellers to report their problems and iss
 
 
 #CONTRIBUTORS
--1.[Akshay Sharma](https://github.com/akshaysharma2277)
--2.[Aakanksha Jain](https://github.com/accakks)
--3.[Ayush Johri](https://github.com/ajohri98)
--4.[Arpit Jain](https://github.com/maiarpitjain)
+ - 1  [Akshay Sharma](https://github.com/akshaysharma2277)
+ - 2  [Aakanksha Jain](https://github.com/accakks)
+ - 3  [Ayush Johri](https://github.com/ajohri98)
+ - 4  [Arpit Jain](https://github.com/maiarpitjain)
   
 
