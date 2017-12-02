@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Welcome to the Safety-Security portal</title>
-
 	<!-- decleration of jquery--> 
 	<script type="text/javascript" src="jquery/jquery.min.js"></script>
 	
@@ -12,164 +11,184 @@
 	
 
 	<!-- fire base-->
-	 <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> 
-	  <!-- check it--> 
+	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> 
+	<!-- check it--> 
 
 	<!-- decleration of js-->
-	<script src="js/jscript.js"></script>
-	  <style>
-      
-      
-      #map {
-        height: 100%;
+	     
+	<style>
+   	  #map {
+        height: 600px;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
-        height: 100%;
+        height: 100;
         margin: 0;
         padding: 0;
       }
     </style>
+
 </head>
-				<body>
-					<div class="form">
-							<div class="heading">Submit safety and security report</div>
-							
-							<form action="" method="post">
-							
-							                  <!--alert-->
-							                   <div class="alert">Your message has been sent</div>
-							  
 
-							  							                   <!--name-->
+<body>
 
+	<div class="alert">Your message has been sent</div>
 
-							<label for="name">
-								<span>Name<span class="name">
-								</span></span>
+	<div class="heading" > 
+		<H1>SUBMIT//GET SAFETY-SECURITY REPORTS</H1>
+	</div>
 
-								<input type="text" class="input" id="name" name="name" value="" />
-							</label>
-							
-							                   <!--  contact-->  
-							
-							<label for="contact">
-								<span>how can we contact u 
-									<span class="contact"></span>
-							</span>
-								<input type="text" class="input" id="contact" name="contact" value="" />
-							</label>
+	<div class="h1">	
+		<header>
+			<code style="color:  black;">&#60;HERE U CAN SUBMIT ISSUES RELATED TO PLACE IN 1 MIN&#62;</code>
+		</header>  
+	</div>
 
+	<div class="h2">
+		<section>
+			<code style="color:  black;" >&#60;HERE YOU CAN GET A REPORT ABOUT ISSUES FACED BY TOURIST AT THIS PLACE&#60;</code>
+		</section>
+	</div>
 
-							<!-- to be copied before generate button -->
+				
+	<div class="form">
+		<div class="heading">Submit safety and security report</div>
+			<label for="name">
+				<span>Name
+					<span class="name"></span>
+				</span>
+				<input type="text" class="input" id="name" name="name" value="" />
+			</label>
+			<label for="contact">
+				<span>how can we contact u 
+					<span class="contact"></span>
+				</span>
+				<input type="text" class="input" id="contact" name="contact" value="" />
+			</label>
+			<label for="option">
+				<span>Place</span>
+				<select name="place" id="dplace">			
+					<option value="Ajmer">Ajmer</option>
+					<option value="Alwar">Alwar</option>
+					<option value="Banswara">Banswara</option>
+					<option value="Baran">Baran</option>
+					<option value="Bikaner">Bikaner</option>
+					<option value="Bikaner">Bikaner</option>
+					<option value="Bhilwara">Bhilwara</option>
+					<option value="Chittorgarh">Chittorgarh</option>
+					<option value="Dausa">Dausa</option>
+					<option value="Dholpur">Dholpur</option>
+					<option value="other">Other</option>
+				</select>
+			</label>
+			<label for="option">    <!-- to be copied before generate button -->
+				<span>Regarding</span>
+				<select name="place" class="safety">
+					<option value="Stalking">Stalking</option>
+					<option value="Get Robbed">Get Robbed</option>
+					<option value="Taking Pictures">Taking Pictures</option>
+					<option value="Catcall/Whistles">Catcall/Whistles</option>
+					<option value="Commenting">Commenting</option>
+					<option value="Indecent Exposure">Indecent Exposure</option>
+					<option value="Touching Groping">Touching Groping</option>
+					<option value="Touching Groping">Touching Groping</option>
+					<option value="Sexual Invites">Sexual Invites</option>
+					<option value="Rape/ Sexual Assault">Rape/ Sexual Assault</option>
+					<option value="Poor/no Street lights">Poor/no Street lights</option>
+					<option value="Chain Snatching">Chain Snatching</option>
+					<option value="Regional Commenting">Regional Commenting</option>
+					<option value="other">Other</option>
+				</select>
+			</label>
+			<label for="problem">
+				<span>Problem Description 
+					<span class="report">*</span>
+				</span>
+				<textarea name="problem" class="text" id="problem"></textarea>
+			</label>
+			<label>
+				<span>&nbsp;</span>
+				<input type="submit" id="write" value="Submit" />
+			</label>
+			<label for="option">
+				<span>Place</span>
+				<select name="place" id="rplace">
+					<option value="Ajmer">Ajmer</option>
+					<option value="Alwar">Alwar</option>
+					<option value="Banswara">Banswara</option>
+					<option value="Baran">Baran</option>
+					<option value="Bikaner">Bikaner</option>
+					<option value="Bikaner">Bikaner</option>
+					<option value="Bhilwara">Bhilwara</option>
+					<option value="Chittorgarh">Chittorgarh</option>
+					<option value="Dausa">Dausa</option>
+					<option value="Dholpur">Dholpur</option>
+					<option value="other">Other</option>
+				</select>
+		    </label>
+			<label>
+			    <span>&nbsp;</span>
+				 <input type="submit" id="read" value="Generate" />			 
+			</label>
+		  <!--  <label for="problem">
+		    	<span>ISSUES FACED BY OTHER TOURISTS 
+		    		<span class="issue">*</span>
+				</span>
+				<textarea name="problem" class="text" id="problem"></textarea>
+			</label>-->
+				<p>&copy;team Rookie</p>
+	</div>
 
+	<script src="js/jscript.js"></script>  
 
-							<label for="option">
-								<span>Place</span>
-								<select name="place" class="place">
-							
-									<option value="Ajmer">Ajmer</option>
-									<option value="Alwar">Alwar</option>
-									<option value="Banswara">Banswara</option>
-									<option value="Baran">Baran</option>
-									<option value="Bikaner">Bikaner</option>
-									<option value="Bikaner">Bikaner</option>
-									<option value="Bhilwara">Bhilwara</option>
-									<option value="Chittorgarh">Chittorgarh</option>
-									<option value="Dausa">Dausa</option>
-									<option value="Dholpur">Dholpur</option>
-									<option value="other">Other</option>
-									</select>
-							   </label>
-							
-							                         <!--option of map-->
+	<script type="text/javascript">
+		 
 
-							<label for="option">    <!-- to be copied before generate button -->
-								<span>Regarding</span>
-								<select name="place" class="safety">
-							
-									<option value="Stalking">Stalking</option>
-									<option value="Get Robbed">Get Robbed</option>
-									<option value="Taking Pictures">Taking Pictures</option>
-									<option value="Catcall/Whistles">Catcall/Whistles</option>
-									<option value="Commenting">Commenting</option>
-									<option value="Indecent Exposure">Indecent Exposure</option>
-									<option value="Touching Groping">Touching Groping</option>
-									<option value="Touching Groping">Touching Groping</option>
-									<option value="Sexual Invites">Sexual Invites</option>
-									<option value="Rape/ Sexual Assault">Rape/ Sexual Assault</option>
-									<option value="Poor/no Street lights">Poor/no Street lights</option>
-									<option value="Chain Snatching">Chain Snatching</option>
-									<option value="Regional Commenting">Regional Commenting</option>
-									<option value="other">Other</option>
-									</select>
-							   </label>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAYGdRvwcDh-MMliBt_ytc7J3kxcmm6Zpc",
+    authDomain: "rajisthanhack.firebaseapp.com",
+    databaseURL: "https://rajisthanhack.firebaseio.com",
+    projectId: "rajisthanhack",
+    storageBucket: "rajisthanhack.appspot.com",
+    messagingSenderId: "66943130589"
+  };
+  firebase.initializeApp(config);
 
-							                           <!--problem-->
-
-							    <label for="problem"><span>Problem Description <span class="report">*
-							    </span>
-							</span>
-							    	<textarea name="problem" class="text" id="problem"></textarea></label>
-
-
-							<label>
-						 <span>&nbsp;</span>
-						 <input type="submit" id="write" value="Submit" />
-						 </label>
-
-
-							
-							<!--submit button -->
-							<H1 > KNOW ABOUT THE PLACE BEORE U VISIT</H1>
-							<h1>JUST ENTER THE PLACE NAME TO GET AN ALERT</h1>
-							
-
-
-						 <!-- enter place buttton to retrive-->
-
-
-
-
-						      <!--generate button -->
-						      <label for="option">
-								<span>Place/landmark</span>
-								<select name="place" class="place">
-							
-									<option value="Ajmer">Ajmer</option>
-									<option value="Alwar">Alwar</option>
-									<option value="Banswara">Banswara</option>
-									<option value="Baran">Baran</option>
-									<option value="Bikaner">Bikaner</option>
-									<option value="Bikaner">Bikaner</option>
-									<option value="Bhilwara">Bhilwara</option>
-									<option value="Chittorgarh">Chittorgarh</option>
-									<option value="Dausa">Dausa</option>
-									<option value="Dholpur">Dholpur</option>
-									<option value="other">Other</option>
-									</select>
-							   </label>
-							
-
-						 <label>
-						 <span>&nbsp;</span>
-						 <input type="submit" id="read" value="Generate" />
-						 </label>
-
-
-
-
-					</form>
-
-					<p>&copy;team Rookie</p>
-
-				</div>
-
-	
-	<!-- decleration of js-->
-	<script src="js/jscript.js"></script>
+  var db = firebase.database();
 
 
+	$("#read").on('click', function(){
+	    place = $("#rplace").val();
+	    db.ref('dev/').on('value', function(snap){
+	        console.log(snap.val()[place].problem);
+	    })
+	})
+
+	$("#write").on('click', function () { 
+  		var data = {
+  			name: $("#name").val(),
+  			contact: $("#contact").val(),
+  			place: $("#dplace").val(),
+  			option: $(".safety").val(),
+  			problem: $("#problem").val()
+  		}
+  		console.log(data);
+
+  		db.ref('dev/').child(data.place).set(data);
+  		console.log('saved');
+  	})
+
+
+
+			  	 // Show alert
+  /*document.querySelector('.alert').style.display = 'block';
+
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },3000);*/
+	</script>
 	 <div id="map"></div>
     <script>
       var map;
@@ -181,6 +200,7 @@
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKx86AqWuCpkxMJUP6kCYAGQ24cOa3ijs&callback=initMap"
-    async defer></script>
+    async defer></script> 
+
 </body>
 </html>
